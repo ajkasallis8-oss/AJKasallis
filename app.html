@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Huddle Generator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #102a43, #2d6a8d);
+      color: #13293d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .app-card {
+      background: white;
+      width: min(720px, 100%);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+      padding: 28px;
+    }
+    h1 {
+      margin-top: 0;
+      color: #16324f;
+    }
+    .controls {
+      display: grid;
+      gap: 14px;
+      margin: 20px 0;
+    }
+    select, button {
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid #c9d6df;
+      font-size: 1rem;
+    }
+    button {
+      background: #1f5f8b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      opacity: 0.95;
+    }
+    .output {
+      margin-top: 18px;
+      padding: 18px;
+      background: #f4f8fb;
+      border-left: 6px solid #1f5f8b;
+      border-radius: 10px;
+      line-height: 1.65;
+    }
+    .small-links {
+      margin-top: 18px;
+    }
+    .small-links a {
+      color: #1f5f8b;
+      margin-right: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-card">
+    <h1>Leadership Huddle Generator</h1>
+    <p>
+      This AI-inspired mini app creates a custom daily team huddle prompt based on your selected focus.
+      It is built on a single page with HTML, CSS, and JavaScript.
+    </p>
+
+    <div class="controls">
+      <label for="focus">Choose a focus area:</label>
+      <select id="focus">
+        <option value="culture">Team Culture</option>
+        <option value="patients">Patient Experience</option>
+        <option value="production">Production and Performance</option>
+        <option value="training">Training and Growth</option>
+      </select>
+
+      <label for="energy">Choose team energy level:</label>
+      <select id="energy">
+        <option value="steady">Steady</option>
+        <option value="low">Low</option>
+        <option value="high">High</option>
+      </select>
+
+      <button onclick="generateHuddle()">Generate Huddle Plan</button>
+    </div>
+
+    <div class="output" id="output">
+      Click the button to generate your customized huddle plan.
+    </div>
+
+    <div class="small-links">
+      <a href="scratch.html">Back to Scratch Page</a>
+      <a href="index.html">Back to Professional Pages</a>
+    </div>
+  </div>
+
+  <script>
+    const huddles = {
+      culture: {
+        steady: "Start with one appreciation for a teammate, review one standard that protects the office culture, and close by asking each person to name one way they will support the team today.",
+        low: "Keep the huddle short and encouraging. Share one recent win, remind the team why their work matters, and ask everyone to choose one positive action they can control today.",
+        high: "Use the momentum. Celebrate what is going well, identify one behavior to keep repeating, and challenge the team to lift someone else during the day."
+      },
+      patients: {
+        steady: "Review the schedule, identify patients who may need extra communication, and assign one person to help create a smoother experience for each high-need patient.",
+        low: "Refocus the team on service. Pick one simple way to exceed expectations today and remind everyone that calm and clear communication lowers stress for patients.",
+        high: "Channel the energy into excellent service. Set a goal for response time, warmth, and patient education so the day feels both fast and personal."
+      },
+      production: {
+        steady: "Look over the day’s schedule, identify the largest opportunities, and ask where one small system improvement could help reduce downtime or missed treatment.",
+        low: "Avoid overwhelm by narrowing the goal. Focus on one number that matters today and one action that will most likely improve it.",
+        high: "Turn urgency into structure. Review production goals, identify bottlenecks, and assign ownership so the team stays coordinated instead of chaotic."
+      },
+      training: {
+        steady: "Choose one practical skill to sharpen today, assign a quick teaching moment, and ask the team to notice one place where process improvement is needed.",
+        low: "Keep development simple. Teach one tip that saves time, reduces confusion, or improves communication, then invite one question from the team.",
+        high: "Use the enthusiasm for growth. Ask a strong team member to teach a quick best practice and challenge everyone to apply it before the end of the day."
+      }
+    };
+
+    function generateHuddle() {
+      const focus = document.getElementById("focus").value;
+      const energy = document.getElementById("energy").value;
+      const plan = huddles[focus][energy];
+      document.getElementById("output").innerHTML =
+        "<strong>Suggested Huddle Plan:</strong><br><br>" + plan;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+  <rect width="1000" height="560" fill="#fff5e7"/>
+  <rect y="390" width="1000" height="170" fill="#e4c192"/>
+  <circle cx="810" cy="110" r="55" fill="#f4c46a"/>
+  <path d="M0 420 L180 260 L360 420 Z" fill="#bf7b55"/>
+  <path d="M250 420 L480 180 L690 420 Z" fill="#99573d"/>
+  <path d="M560 420 L760 250 L980 420 Z" fill="#b86b4a"/>
+  <rect x="110" y="335" width="110" height="12" fill="#5c3a21"/>
+  <rect x="152" y="275" width="28" height="60" fill="#5c3a21"/>
+  <circle cx="166" cy="255" r="22" fill="#5c3a21"/>
+  <text x="265" y="505" font-family="Verdana" font-size="34" fill="#7a2e12">Strength in the Southwest</text>
+</svg>

@@ -1,0 +1,35 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #24323f;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1f3b57, #4f7cac);
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f3b57;
+}
+
+.accent-panel {
+  background-color: #dbe9f4;
+}
+
+.accent-panel a {
+  color: #16324f;
+  text-decoration: none;
+}
+
+.accent-panel a:hover {
+  text-decoration: underline;
+}
+
+.resume-page {
+  background-color: #f6f8fb;
+}
+
+footer a {
+  text-decoration: none;
+}

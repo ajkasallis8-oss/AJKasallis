@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southwest Strength & Adventure</title>
+  <link rel="stylesheet" href="scratch.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero-box">
+      <h1>Southwest Strength & Adventure</h1>
+      <p>A from-scratch page about training, desert scenery, and staying motivated in the Southwest.</p>
+      <nav class="top-links">
+        <a href="index.html">Back to Professional Pages</a>
+        <a href="app.html">Go to My Web App</a>
+        <a href="#tableau-section">Jump to Tableau Graph</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2>Why I Like This Topic</h2>
+      <p>
+        Living in the Southwest makes it easy to appreciate wide-open views, early-morning sunlight,
+        and the value of staying active. This page combines those interests into one place.
+      </p>
+      <img src="assets/desert-training.svg" alt="Custom desert training illustration" class="feature-image">
+    </div>
+
+    <div class="content-box">
+      <h2>Training Priorities</h2>
+      <p>This section demonstrates a nested list using both ordered and unordered lists.</p>
+      <ol>
+        <li>Build a strong foundation
+          <ul>
+            <li>Focus on consistency</li>
+            <li>Use basic compound lifts</li>
+            <li>Track progress over time</li>
+          </ul>
+        </li>
+        <li>Recover well
+          <ul>
+            <li>Sleep enough</li>
+            <li>Eat enough protein</li>
+            <li>Stay hydrated</li>
+          </ul>
+        </li>
+        <li>Enjoy the process
+          <ul>
+            <li>Train with purpose</li>
+            <li>Pick motivating environments</li>
+            <li>Celebrate small wins</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div class="content-box video-box">
+      <h2>Motivation Video</h2>
+      <p>This YouTube video is embedded directly in the page.</p>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/wnHW6o8WMas"
+          title="Motivation video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="content-box" id="tableau-section">
+      <h2>Interactive Tableau Graph</h2>
+      <p>This is a live Tableau visualization embedded into the page.</p>
+
+      <div class='tableauPlaceholder' id='viz168'>
+        <noscript>
+          <a href='#'><img alt='Tableau visualization' src='https://public.tableau.com/static/images/Su/SuperstoreSalesDashboard_17403964185480/KPIsSummary/1_rss.png' style='border: none' /></a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='SuperstoreSalesDashboard_17403964185480/KPIsSummary' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='device' value='desktop' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz168');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height='827px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <div class="content-box">
+      <h2>On-Page Anchor</h2>
+      <p>You used the navigation at the top to jump straight to the Tableau section. That is the required on-page anchor feature.</p>
+      <p><a href="#top">Back to Top</a></p>
+    </div>
+  </main>
+</body>
+</html>

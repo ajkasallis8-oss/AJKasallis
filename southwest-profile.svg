@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="#f3f7fb"/>
+  <rect y="420" width="900" height="200" fill="#d8c4a8"/>
+  <path d="M0 450 L160 290 L290 420 Z" fill="#cf9967"/>
+  <path d="M200 450 L390 230 L560 450 Z" fill="#b86f4f"/>
+  <path d="M470 450 L700 190 L900 450 Z" fill="#9b5f45"/>
+  <circle cx="730" cy="120" r="50" fill="#f2c572"/>
+  <rect x="110" y="300" width="150" height="90" rx="10" fill="#fefefe" stroke="#355070" stroke-width="6"/>
+  <rect x="170" y="360" width="30" height="70" fill="#355070"/>
+  <text x="125" y="350" font-family="Arial" font-size="28" fill="#355070">PORTFOLIO</text>
+</svg>
